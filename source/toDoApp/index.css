@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Space+Mono&display=swap');
+body{
+    background-color: hsl(54, 100%, 83%);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 20%;
+    height: 36em;
+    width: 23em;
+    background-color: hsl(54, 100%, 89%);
+    border: solid hsl(39, 100%, 50%) 3px;
+    box-shadow: 10px 10px 1px hsl(39, 100%, 50%);
+    animation-name: start;
+    animation-duration: 0.7s;
+}
+.main-container h1{
+    font-family: 'Questrial', sans-serif;
+    font-weight: 500;
+    border-bottom: solid hsl(39, 100%, 50%) 3px;
+    color: hsl(0, 0%, 20%);
+}
+.main-container input{
+    height: 1.8em;
+    width: 17em;
+    text-align: center;
+    background-color: hsl(54, 100%, 96%);
+    border:solid hsl(39, 100%, 50%) 2px;
+    border-radius: 6px;
+    font-family: 'Space Mono', monospace;
+    color:hsl(0, 0%, 20%);
+    font-weight: 600;
+}
+.main-container button{
+    width: 7em;
+    height: 2em;
+    background-color: hsl(39, 100%, 50%);
+    border: solid hsl(39, 100%, 30%) 2px;
+    border-radius: 5px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+    color: hsl(0, 0%, 20%);
+
+}
+.main-container button:hover{
+    background-color: hsl(39, 100%, 90%);
+    border-color: hsl(39, 100%, 50%);
+}
+.notes{
+    width: 90%;
+    height: 70%;
+    margin-top: 10px;
+}
+.notes >div{
+    background-color: hsl(54, 100%, 77%);
+    height: 5.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    border: solid hsl(39, 100%, 50%) 2px;
+    margin-top: 10px;
+    animation-name: start;
+    animation-duration: 0.5s;
+}
+.notes p{
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+    color: hsl(0, 0%, 20%);
+}
+.buttonsDisplay{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+.buttonsDisplay i{
+    cursor: pointer;
+}
+@keyframes start{
+    from{transform: translateY(200em);}
+}
+a{
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+    color: hsl(0, 0%, 20%);
+    font-weight: 600;
+    font-size: 20pt;
+    margin-top: 20px;
+    animation-name: start;
+    animation-duration: 0.7s;
+}
