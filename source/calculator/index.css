@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+body{
+    background-color: hsl(229, 44%, 21%);
+    display: grid;
+    place-items: center;
+}
+.conteiner{
+    margin-top: 2em;
+    height: 30em;
+    width: 25em;
+    background-color: rgb(226, 222, 222);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 8px 10px 2px rgb(94, 93, 93);
+    animation-name: start;
+    animation-duration: 1s;
+
+}
+.resultContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+    width: 92%;
+    height: 15%;
+    background-color: hsl(120, 54%, 48%);
+    border-radius: 20px;
+    border: solid 3px rgb(175, 172, 172);
+    box-shadow: 2px 5px 2px rgb(109, 106, 106);
+    text-align: center;
+    font-family: 'Monomaniac One', sans-serif;
+    font-size: 30pt;
+}
+.buttons{
+    margin-top: 20px;
+    display: flex;
+}
+.numbers button{
+    font-family: 'Monomaniac One', sans-serif;
+    font-size: 14pt;
+    margin: 0.3em;
+    width:3em;
+    height:3em;
+    border:none;
+    box-shadow: 2px 5px 2px rgb(109, 106, 106);
+    border-radius: 10px;
+    background-color: rgb(248, 244, 244);
+    cursor: pointer;
+}
+.numbers button:active{
+    box-shadow: 1px 3px 2px rgb(109, 106, 106);
+    width: 2.8em;
+    height: 2.8em;
+    margin: 0.4em;
+}
+.numbers button:hover{
+    background-color: hsla(0, 4%, 86%, 0.637);
+}
+.symbols{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.symbols button{
+    font-family: 'Monomaniac One', sans-serif;
+    font-size: 14pt;
+    margin: 0.3em;
+    width:3em;
+    height:3em;
+    border:none;
+    box-shadow: 2px 5px 2px rgb(109, 106, 106);
+    border-radius: 10px;
+    background-color: rgb(248, 244, 244);
+    cursor:pointer;
+}
+.symbols button:hover{
+    background-color: hsla(0, 4%, 86%, 0.637);
+}
+.symbols button:active{
+    box-shadow: 1px 3px 2px rgb(109, 106, 106);
+    width: 2.8em;
+    height: 2.8em;
+    margin: 0.4em;
+}
+.resultSymbol{
+    font-family: 'Monomaniac One', sans-serif;
+    font-size: 14pt;
+    margin-top: 10px;
+    width:15.7em;
+    height:3em;
+    border:none;
+    box-shadow: 2px 5px 2px rgb(109, 106, 106);
+    border-radius: 10px;
+    background-color: rgb(248, 244, 244);
+    cursor: pointer;
+}
+.resultSymbol:hover{
+    background-color: hsla(0, 4%, 86%, 0.637);
+}
+.resultSymbol:active{
+    box-shadow: 1px 3px 2px rgb(109, 106, 106);
+    width: 15.5em;
+    height: 2.8em;
+}
+footer{
+    margin-top: 20px;
+    animation-name: start;
+    animation-duration: 1s;
+}
+footer a{
+    font-family: 'Monomaniac One', sans-serif;
+    font-size: 20pt;
+    text-decoration: none;
+    color: rgba(226, 222, 222, 0.349);
+}
+@keyframes star{
+    0%{
+        margin-left: 200em;
+    }
+}
