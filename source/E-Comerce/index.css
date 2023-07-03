@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Dancing+Script:wght@500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: hsl(60, 100%, 75%);
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 3em;
+    align-items: center;
+    width: 90%;
+}
+.main-cart{
+    background-color: hsl(60, 100%, 87%);
+    width: 30em;
+    height: 35em;
+    border-radius: 30px;
+    position:fixed;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    border: solid hsl(35, 100%, 50%) 3px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    animation: open 1s;
+    overflow: auto;
+}
+.cart-container{
+    margin-top: 20px;
+    width: 98%;
+    border: solid hsl(35, 100%, 65%)2px;
+    border-radius: 20px;
+    height: 6em;
+    background-color: hsl(60, 100%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:1px;
+}
+.cart-container p{
+    font-size: 13pt;
+    font-family: 'Arvo', serif;
+}
+.cart-container input{
+    width: 2em;
+    background-color: hsl(35, 100%, 65%);
+    border: solid hsl(35, 100%, 45%) 2px;
+    border-radius: 5px;
+    text-align: center;
+}
+.cart-container i{
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+.container-cartProduct{
+    height: 5em;
+    width: 5em;
+    background-color: hsl(100, 100%, 100%);
+    margin-left: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid hsl(0, 0%, 70%) 1px;
+    box-shadow: 3px 3px 1px hsl(0, 0%, 70%)
+}
+.container-cartProduct img{
+    height: 70%;
+    border-radius: 10px;
+}
+.cart-buttons{
+    width: 99%;
+    height: 3em;
+    background-color: hsl(60, 100%, 87%);
+    position: sticky;
+    top:0;
+    border-bottom: solid hsl(35, 100%, 55%) 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.cart-buttons i{
+    margin:20px;
+    cursor: pointer;
+}
+.header-nav >p{
+    font-family: 'Arvo', serif;
+    font-size: 14pt;
+    border-bottom: solid black 3px;
+    cursor: pointer;
+}
+.header-nav > p:hover{
+    color: hsl(0, 0%, 30%);
+    border-bottom: solid hsl(0, 0%, 30%) 3px;
+    font-size: 15pt;
+}
+.main-sectionText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 11em;
+    gap: 2em;
+}
+.main-sectionText h1{
+    font-size: 70pt;
+    font-family: 'Dancing Script', cursive;
+    color: hsl(35, 100%, 50%);
+    text-shadow: 2px 2px 1px hsl(0, 0%, 0%);
+}
+.main-sectionText p{
+    font-family: 'Arvo', serif;
+    font-size: 20pt;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.main-sectionText h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 35pt;
+    color: hsl(35, 100%, 50%);
+    text-shadow:  1.5px 1.5px 1px hsl(0, 0%, 0%);
+    margin-top: 1em;
+    cursor: pointer;
+}
+.main-sectionProducts{
+    display: flex;
+    justify-content: center;
+}
+.main-sectionProducts > div{
+    display: block;
+    overflow: auto;
+    margin-top: 5em;
+    background-color: hsl(60, 100%, 87%);
+    width: 90%;
+    border-radius: 30px;
+    border: solid hsl(35, 100%, 50%) 3px;
+}
+.container-products{
+    width: fit-content;
+    display: flex;
+    flex-flow: wrap;
+}
+.container-products{
+    display: flex;
+    flex-direction: flex;
+    justify-content: center;
+}
+.container-products div{
+    cursor: pointer;
+    height: 13em;
+    width: 13em;
+    background-color: hsl(100, 100%, 100%);
+    margin: 2em;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid hsl(0, 0%, 70%) 1px;
+    box-shadow: 3px 3px 1px hsl(0, 0%, 70%);
+    gap:15px;
+
+}
+.container-products img{
+    height: 70%;
+    border-radius: 20px;
+}
+.container-products p{
+    font-family: 'Arvo', serif;
+    font-size: 90%;
+}
+.main-footer{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    text-align: center;
+}
+.main-footer p{
+    font-size: 14pt;
+    font-family: 'Arvo', serif;
+}
+.main-footer a{
+    font-size: 16pt;
+    font-family: 'Arvo', serif;
+    font-weight: 600;
+    color: hsl(0, 0%, 20%);
+    margin-bottom: 10px;
+}
+.main-expendedItem{
+    background-color: hsl(60, 100%, 87%);
+    width: 30em;
+    height: 35em;
+    border-radius: 30px;
+    position:fixed;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    border: solid hsl(35, 100%, 50%) 3px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    animation: 1s open;
+
+}
+.main-expendedItem div{
+    height: 23em;
+    width: 23em;
+    background-color: hsl(100, 100%, 100%);
+    margin: 2em;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid hsl(0, 0%, 70%) 1px;
+    box-shadow: 3px 3px 1px hsl(0, 0%, 70%);
+    gap:15px;    
+    animation: 1s open;
+}
+.main-expendedItem img{
+    height: 15em;
+    border-radius: 30px;
+    animation: 1s open;
+}
+.main-expendedItem p{
+    font-family: 'Arvo', serif;
+    font-size: 15pt;
+}
+.main-expendedItem button{
+    cursor: pointer;
+    width: 7em;
+    height: 2em;
+    font-size: 11pt;
+    font-family: 'Arvo', serif;
+    background-color: hsl(35, 100%, 50%);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px 1px hsl(35, 100%, 30%);
+    animation: 1s open;
+}
+.main-expendedItem button:hover{
+    background-color: hsl(35, 100%, 65%);
+    box-shadow: 3px 3px 1px hsl(35, 100%, 45%);
+}
+.main-expendedItem i{
+    position: absolute;
+    margin-left: 85%;
+    margin-bottom: 105%;
+    cursor: pointer;
+}
+.main-mobileCartButton{
+    display: none;
+}
+.main-mobileCartButton div{
+    height: 3.5em;
+    cursor: pointer;
+    left: 85%;
+    bottom: 5%;
+    width: 3.5em;
+    position: fixed;
+    border-radius: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(35, 100%, 50%);
+}
+@media screen and (min-width:680px){
+    .container-products div:hover{
+        height: 14em;
+        width: 14em;
+        margin: 1.5em;
+    }
+}
+@media screen and (max-width:680px) {
+    .main-mobileCartButton{
+        display: inline;
+    }
+    .container-products div{
+        width: 8em;
+        height: 8em;
+        margin: 1em;
+    }
+    .container-products img{
+        height: 70%;
+    }
+    .container-products p{
+        font-size: 75%;
+    }
+    .header-nav{
+        display: none;
+    }
+    .main-expendedItem{
+        width: 20em;
+        height: 20em;
+    }
+    .main-expendedItem div{
+        width: 13em;
+        height: 13em;
+    }
+    .main-expendedItem img{
+        height: 7em;
+    }
+    .main-expendedItem p{
+        font-size: 13pt;
+    }
+    .main-expendedItem i{
+        margin-left: 85%;
+        margin-bottom: 85%;
+    }
+    .main-sectionText p{
+        font-size: 15pt;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .main-sectionText{
+        margin-top: 4em;
+        gap: 3em;
+    }
+    .main-sectionText h1{
+        font-size: 60pt;
+    }
+    .main-sectionText h2{
+        margin-top: 0.5em;
+    }
+    .main-cart{
+        width: 20em;
+        height: 20em;
+    }
+    .cart-container p{
+        font-size: 13pt;
+    }
+    .cart-container input{
+        width: 2em;
+        background-color: hsl(35, 100%, 65%);
+        border: solid hsl(35, 100%, 45%) 2px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .cart-container i{
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .container-cartProduct{
+        height: 4em;
+        width: 4em;
+        margin-left: 10px;
+    }
+    .container-cartProduct img{
+        height: 70%;
+        border-radius: 10px;
+    }
+}
+@keyframes open{
+    from{height: 0em;}
+}

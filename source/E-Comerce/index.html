@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowerShop</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- fontawsome link to be able to use the icons -->
+    <script src="https://kit.fontawesome.com/4852f62277.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="main">
+        <!-- mobileCartButton is not displayed in pcs -->
+        <div class="main-mobileCartButton">
+            <div>
+                <i class="fa-solid fa-cart-shopping fa-2xl" onclick="openCart(this)"></i>
+            </div>
+        </div>
+        <!-- expendedItem should appear when cart button is clicked -->
+        <div class="main-expendedItem">
+        </div>
+        <div class="main-cart">
+            <div class="cart-buttons">
+                <i class="fa-solid fa-arrow-left fa-2xl" style="color: #ff7300;" onclick="closeWindow(this)"></i>
+                <i class="fa-regular fa-credit-card fa-2xl" style="color: #ff7300;"></i>
+            </div>
+        </div>
+        <header class="header">
+            <nav class="header-nav">
+                <p onclick="scrollShop()">Shop</p>
+                <p onclick="openCart()">Cart<i class="fa-solid fa-cart-shopping"></i></p>
+            </nav>
+        </header>
+        <section class="main-sectionText">
+            <h1>Welcome to FlowerShop</h1>
+            <p>''At FlowerShop, we believe in the enchanting power of flowers. Our passion for floral beauty and the joy it brings inspired us to create an online destination where you can experience the magic of nature's finest creations from the comfort of your own home."</p>
+            <h2 onclick="scrollShop()">Products</h2>
+        </section>
+        <section class="main-sectionProducts">
+            <div class="sectionProducts-container"><
+                <div class="container-products">
+                    <div onclick="showItem(this)">
+                        <img src="source/flower1.png">
+                        <p>Flower One $4,99</p>
+                    </div>
+                    <div onclick="showItem(this)">
+                        <img src="source/flower2.png">
+                        <p>Flower Two $2,99</p>
+                    </div>
+                    <div onclick="showItem(this)">
+                        <img src="source/flower3.png">
+                        <p>Flower Three $3,50</p>
+                    </div>
+                    <div onclick="showItem(this)">
+                        <img src="source/flower4.png">
+                        <p>Flower Four $1,75</p>
+                    </div>
+                    <div onclick="showItem(this)">
+                        <img src="source/flower5.png">
+                        <p>Flower Five $7,49</p>
+                    </div>
+                    <div onclick="showItem(this)">
+                        <img src="source/flower6.png">
+                        <p>Flower Six $1,99</p>
+                    </div>
+                    <div onclick="showItem(this)">
+                        <img src="source/flower7.png">
+                        <p>Flower Seven $6,50</p>
+                    </div>
+                    <div onclick="showItem(this)">
+                        <img src="source/flower8.png">
+                        <p>Flower Eight $10,75</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="main-footer">
+            <p>Images made by AI</p>
+            <a href="https://github.com/Arflchn">GitHub</a>
+        </footer>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
