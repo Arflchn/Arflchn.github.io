@@ -269,7 +269,7 @@ main{
         margin-left: 0em;
     }
     .section3-projects{
-        margin-left: 0;
+        margin-left: 0em;
     }
 }
 @keyframes startRight{
