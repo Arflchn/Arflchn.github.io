@@ -26,7 +26,3 @@ let previousImg = () =>{
         changeImg(imageIndex)
     }
 }
-function copyIt(){
-    navigator.clipboard.writeText("willuweitandriel@gmail.com")
-    window.alert("Gmail copied")
-}
