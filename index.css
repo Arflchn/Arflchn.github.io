@@ -19,10 +19,6 @@ main{
     justify-content: space-around;
     margin-top: 5px;
 }
-.header-nav i{
-    cursor: pointer;
-    margin-top: 10px;
-}
 .header-nav a{
     margin-top: 10px;
 }
